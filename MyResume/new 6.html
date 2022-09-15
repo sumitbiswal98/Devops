@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>ANDROID GAMES</title>
+        <link rel="stylesheet" href="style.css" />
+        <style>
+            table{
+                border-collapse:collapse;
+                 border:2px solid;
+            }
+        </style>
+    </head>
+     <body>
+         <h3>REGISTER PAGE</h3>
+         <div class="container">
+             <table>
+                 <form>
+
+                     <label>First Name:</label>
+                     <input type="text" id="fname" placeholder="Enter First name" /><br />
+                     <label>Last Name:</label>
+                     <input type="text" id="lname" placeholder="Enter Last name" /><br />
+                     <label>Age:</label>
+                     <input type="text" id="age" placeholder="Enter your Age" /><br />
+                     <label>DOB:</label>
+                     <input type="date" id="dob" placeholder="Enter your dob" /><br />
+                     <label>Email-id:</label>
+                     <input type="text" id="email" placeholder="Enter your Email-id" /><br />
+                     <label>Password:</label>
+                     <input type="text" id="pass" placeholder="Enter your Password" /><br />
+                     <label>Gender</label><br />
+                     <input type="radio" id="button" />
+                     <label>Male</label><br />
+                     <input type="radio" id="button" />
+                     <label>Female</label><br />
+                     <label>Ph-number:</label>
+                     <input type="text" id="ph" placeholder="Enter your ph-number" /><br />
+                     <input type="button" id="submit" value="SUBMIT" onclick="return valid();" /><br />
+
+
+
+
+                 </form>
+              
+             </table>
+         </div>
+      </body>
+<script>
+                     function valid()
+                     {
+                        
+                         var fname = document.getElementById("fname").value;
+						 var regax=/^([zA-Z]{1}[a-zA-Z]{0,6})$/;
+                         <!-- var fname = $("fname").val; -->
+						 
+                         if(!regax.test(fname)) 
+						 {
+
+
+                             alert('enter your first name ');
+                         }
+						 var
+						 
+
+                     }
+
+</script>
+</html>
